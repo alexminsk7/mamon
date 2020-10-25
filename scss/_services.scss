@@ -13,6 +13,11 @@
         display: flex;
         justify-content: center;
 
+        .services__image--m {
+          width: 60px;
+          height: 60px;
+        }
+
         .services__image--svg {
           width: 60px;
           height: 60px;

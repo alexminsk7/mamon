@@ -76,7 +76,6 @@ img:not([alt]) {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1180px;
-  outline: 1px solid red;
 }
 
 a {
@@ -86,10 +85,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-hr {
-  margin-bottom: 108px;
 }
 
 /* Modificators */
@@ -196,6 +191,11 @@ hr {
   justify-content: center;
 }
 
+.services .services__inner .services__item .services__icon .services__image--m {
+  width: 60px;
+  height: 60px;
+}
+
 .services .services__inner .services__item .services__icon .services__image--svg {
   width: 60px;
   height: 60px;
@@ -229,13 +229,9 @@ hr {
   transform: translateX(5%);
 }
 
-.team {
-  padding-bottom: 0;
-}
-
 .team .team__inner {
   display: grid;
-  grid-template: repeat(4, 1fr)/repeat(3, 33%);
+  grid-template: repeat(3, 1fr)/repeat(3, 34%);
   row-gap: 40px;
 }
 
@@ -274,4 +270,8 @@ hr {
 
 .footer .footer__inner .footer__socials .footer__link {
   margin-left: 40px;
+}
+
+.footer .footer__inner .footer__socials .footer__link .footer__image {
+  fill: #b2b2b2;
 }
