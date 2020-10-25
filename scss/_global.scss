@@ -1,0 +1,122 @@
+/* Set core root defaults */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margins and paddings */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  background: #e5e5e5;
+  color: #202020;
+  font-family: Operator Mono Lig, sans-serif;
+  text-rendering: optimizeSpeed;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class],
+li {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: blur(10px);
+}
+
+/* Diffrent rules */
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1180px;
+  outline: 1px solid red;
+}
+
+a {
+  text-decoration: none;
+  color: #202020;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+hr {
+  margin-bottom: 108px;
+}
+
+/* Modificators */
+.btn {
+  padding: 4px 14px;
+  border: none;
+  color: #fff;
+  background: #5528ff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page {
+  position: relative;
+  padding: 50px 0;
+}
+
+.page--top {
+  border-top: 1px solid #c2c2c2;
+}
+
+.line--info {
+  position: absolute;
+  top: -13px;
+  padding: 5px 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #c2c2c2;
+  background: #e5e5e5;
+}

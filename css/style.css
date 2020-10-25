@@ -1,0 +1,277 @@
+/* Set core root defaults */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margins and paddings */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  background: #e5e5e5;
+  color: #202020;
+  font-family: Operator Mono Lig, sans-serif;
+  text-rendering: optimizeSpeed;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class],
+li {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: blur(10px);
+}
+
+/* Diffrent rules */
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1180px;
+  outline: 1px solid red;
+}
+
+a {
+  text-decoration: none;
+  color: #202020;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  margin-bottom: 108px;
+}
+
+/* Modificators */
+.btn {
+  padding: 4px 14px;
+  border: none;
+  color: #fff;
+  background: #5528ff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page {
+  position: relative;
+  padding: 50px 0;
+}
+
+.page--top {
+  border-top: 1px solid #c2c2c2;
+}
+
+.line--info {
+  position: absolute;
+  top: -13px;
+  padding: 5px 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #c2c2c2;
+  background: #e5e5e5;
+}
+
+.header {
+  margin-bottom: 115px;
+}
+
+.header .header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.header .header__inner .header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .header__inner .header__logo .header__logo-link {
+  margin-right: 25px;
+}
+
+.header .header__inner .header__logo .header__title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.header .header__inner .header__info .header__link {
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 30px;
+}
+
+.header .header__inner .header__info .header__link:last-child {
+  margin-right: 0;
+}
+
+.main {
+  margin-bottom: 120px;
+}
+
+.main .main__title {
+  font-size: 52.25px;
+  margin-bottom: 35px;
+}
+
+.main .main__text {
+  width: 75%;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 51px;
+  margin-bottom: 70px;
+}
+
+.main .btn--lg {
+  padding: 14px 58px;
+  font-size: 24px;
+}
+
+.services .services__inner {
+  display: grid;
+  grid-template: 50% 50% / 50% 50%;
+}
+
+.services .services__inner .services__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.services .services__inner .services__item .services__icon {
+  flex-basis: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.services .services__inner .services__item .services__icon .services__image--svg {
+  width: 60px;
+  height: 60px;
+}
+
+.services .services__inner .services__item .services__box {
+  margin-top: 50px;
+  flex-basis: calc(100% - 120px);
+}
+
+.services .services__inner .services__item .services__box .services__title {
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.services .services__inner .services__item .services__box .services__text {
+  width: 82%;
+  font-size: 14px;
+  line-height: 16px;
+  color: #b2b2b2;
+  margin-bottom: 30px;
+}
+
+.clients .clients__inner {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(4, 25%);
+  row-gap: 40px;
+  text-align: center;
+  transform: translateX(5%);
+}
+
+.team {
+  padding-bottom: 0;
+}
+
+.team .team__inner {
+  display: grid;
+  grid-template: repeat(4, 1fr)/repeat(3, 33%);
+  row-gap: 40px;
+}
+
+.team .team__inner .team__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.team .team__inner .team__item .team__image {
+  margin-right: 35px;
+}
+
+.team .team__inner .team__item .team__info {
+  flex-basis: calc(100% - 100px);
+}
+
+.footer {
+  background: #f7f7f7;
+  padding: 20px 0;
+}
+
+.footer .footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .footer__inner .footer__socials {
+  display: flex;
+}
+
+.footer .footer__inner .footer__socials :nth-child(2) {
+  margin-top: 3px;
+}
+
+.footer .footer__inner .footer__socials .footer__link {
+  margin-left: 40px;
+}
